@@ -4,7 +4,7 @@
 %global __requires_exclude ^.*\\.so.*$
 
 Name: xiaomi-pipa-firmware
-Version: 1.1
+Version: 1.2
 Release: 2
 URL: https://github.com/pipa-mainline/xiaomi-pipa-firmware
 Summary: Firmware package for Xiaomi Pad 6 (pipa)

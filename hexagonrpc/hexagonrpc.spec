@@ -1,5 +1,5 @@
 Name:       hexagonrpc
-Version:    0.3.2
+Version:    0.3.3
 Release:    %autorelease
 Summary:    FastRPC ioctl wrapper and a reverse tunnel
 

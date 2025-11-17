@@ -1,5 +1,5 @@
 Name: alsa-ucm-conf-sm8250
-Version: 1.0
+Version: 1.1
 Release: 1
 Summary: alsa
 Source1: Xiaomi Pad 6.conf

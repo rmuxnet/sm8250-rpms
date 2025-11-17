@@ -1,5 +1,5 @@
 Name:           bootmac
-Version:        0.6.0
+Version:        0.6.1
 Release:        %autorelease
 Summary:        Configures the MAC addresses of WLAN and Bluetooth interfaces at boot
 
