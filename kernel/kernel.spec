@@ -6,7 +6,7 @@ Version: 6.15.8
 Release: rmux
 Summary: AIO package for linux kernel, modules and headers for Xiaomi Pad 6 (pipa).
 URL: https://github.com/PipaDB/linux
-Source1: %{url}/archive/%{_commit}.tar.gz
+Source1: %{url}/archive/%{_commit}/linux-%{_commit}.tar.gz
 Source2: pipa.config
 License: GPL
 
@@ -41,7 +41,6 @@ Mainline kernel for Xiaomi Pad 6 (pipa).
 tar -xzf %{SOURCE1}
 cd linux-%{_commit}
 cp %{SOURCE2} .config
-# patch -p1 < %{SOURCE3}  <-- removed
 
 %build
 cd linux-%{_commit}
@@ -75,3 +74,60 @@ kernel-install add %{version}-%{release} /usr/lib/modules/%{version}-%{release}/
 
 %postun
 kernel-install remove %{version}-%{release} /usr/lib/modules/%{version}-%{release}/vmlinuz
+
+
+%package core
+License: GPL
+Summary: AIO package for linux kernel, modules and headers for Xiaomi Pad 6 (pipa).
+Requires: kernel
+
+%description core
+Mainline kernel for Xiaomi Pad 6 (pipa).
+
+%files core
+
+
+%package modules
+License: GPL
+Summary: AIO package for linux kernel, modules and headers for Xiaomi Pad 6 (pipa).
+Requires: kernel
+
+%description modules
+Mainline kernel for Xiaomi Pad 6 (pipa).
+
+%files modules
+
+
+%package devel
+License: GPL
+Summary: AIO package for linux kernel, modules and headers for Xiaomi Pad 6 (pipa).
+Requires: kernel-headers
+
+%description devel
+Mainline kernel header for Xiaomi Pad 6 (pipa).
+
+%files devel
+
+
+%package headers
+License: GPL
+Summary: AIO package for linux kernel, modules and headers for Xiaomi Pad 6 (pipa).
+Provides: kernel-devel = %{version}-%{release}
+
+%description headers
+Mainline kernel headers for Xiaomi Pad 6 (pipa).
+
+%files headers
+/usr/include
+
+
+%package devel-matched
+License: GPL
+Summary: AIO package for linux kernel, modules and headers for Xiaomi Pad 6 (pipa).
+Requires: kernel-devel
+Requires: kernel-core
+
+%description devel-matched
+Mainline kernel headers for Xiaomi Pad 6 (pipa).
+
+%files devel-matched
