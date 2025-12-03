@@ -1,5 +1,5 @@
 Name: pipa-metapkg
-Version: 1.2
+Version: 1.2.1
 Release: 1
 Summary: Xiaomi Pad 6 support meta package
 License: MIT
