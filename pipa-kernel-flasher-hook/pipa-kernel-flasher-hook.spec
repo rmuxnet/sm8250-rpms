@@ -1,5 +1,5 @@
 Name: pipa-kernel-flasher-hook
-Version: 1.3
+Version: 1.3.1
 Release: 1
 Summary: Kernel flasher hook for the Xiaomi Pad 6
 Source1: 99-android-boot.install
