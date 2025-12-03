@@ -6,6 +6,7 @@ Source1: 99-android-boot.install
 License: MIT
 
 Requires: android-tools
+Requires: qbootctl
 
 %description
 Kernel flasher hook for the Xiaomi Pad 6
