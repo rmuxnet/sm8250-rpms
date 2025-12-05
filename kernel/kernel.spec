@@ -1,9 +1,9 @@
-%global _commit b0010c744b9726b5e12fae93dc159d0521cb330a
+%global _commit 4b367e1cad339f74889c874febe958016558c643
 
 Name: kernel
 ExclusiveArch: aarch64
 Version: 6.15.8
-Release: 1.3.rmux
+Release: 1.3.1.rmux
 Summary: AIO package for linux kernel, modules and headers for Xiaomi Pad 6 (pipa).
 URL: https://github.com/PipaDB/linux
 Source1: %{url}/archive/%{_commit}/linux-%{_commit}.tar.gz
